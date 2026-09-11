@@ -1,7 +1,7 @@
 const PUMPCAT = {
   name: "Pumpfun Cat",
   symbol: "PUMPCAT",
-  ca: "",
+  ca: "9sJJSXjHeM8ZrpczowrBYhqNU3dyHU8nQnvm6CH2pump",
   x: "https://x.com/PumpfunCatMeme",
   pumpSwapBase: "https://swap.pump.fun",
   dexBase: "https://dexscreener.com/solana",
