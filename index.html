@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pumpfun Cat | $PUMPCAT</title>
+  <meta name="description" content="Pumpfun Cat ($PUMPCAT) on Solana. Pumpfun's cat mascot — white on top, green below. Just a cat pumping for fun." />
+  <meta property="og:title" content="Pumpfun Cat | $PUMPCAT" />
+  <meta property="og:description" content="Pumpfun's cat mascot, White on top, green below—just a cat pumping for fun." />
+  <meta property="og:image" content="assets/logo.png" />
+  <meta name="theme-color" content="#00c853" />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stage" aria-hidden="true">
+    <div class="horizon-cream"></div>
+    <div class="horizon-mint"></div>
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+    <div class="grain"></div>
+    <svg class="hill" viewBox="0 0 1440 220" preserveAspectRatio="none">
+      <path class="hill-back" d="M0,120 C180,40 360,180 540,100 C720,20 900,160 1080,80 C1260,10 1380,90 1440,60 L1440,220 L0,220 Z"></path>
+      <path class="hill-front" d="M0,150 C220,80 420,200 640,130 C860,60 1040,190 1220,120 C1340,80 1400,110 1440,100 L1440,220 L0,220 Z"></path>
+    </svg>
+    <canvas id="float-field"></canvas>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#hero">
+      <span class="brand-orb">
+        <img src="assets/logo.png" alt="Pumpfun Cat logo" />
+      </span>
+      <span class="brand-copy">
+        <span class="brand-name">Pumpfun Cat</span>
+        <span class="brand-tick">$PUMPCAT</span>
+      </span>
+    </a>
+    <button class="menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#howtobuy">How to Buy</a>
+      <a href="#chart">Chart</a>
+      <a href="#joinus">Join Us</a>
+      <a class="nav-buy" data-link="buy" href="https://swap.pump.fun" target="_blank" rel="noopener noreferrer">
+        <img src="icons/pumpswap.svg" alt="" />
+        Buy $PUMPCAT
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-orbit">
+        <div class="ring ring-a"></div>
+        <div class="ring ring-b"></div>
+        <div class="ring ring-c"></div>
+        <span class="orbiter o1"><i></i></span>
+        <span class="orbiter o2"><i></i></span>
+        <span class="orbiter o3"><i></i></span>
+        <span class="orbiter o4"><i></i></span>
+        <div class="logo-plate">
+          <img src="assets/logo.png" alt="White cat in a green pill cap" />
+          <span class="plate-shine"></span>
+        </div>
+      </div>
+
+      <div class="hero-copy">
+        <p class="chip">
+          <img src="icons/solana.svg" alt="" />
+          Live on Solana
+        </p>
+        <h1>
+          <span class="word-green">Pumpfun</span>
+          <span class="word-white">Cat</span>
+        </h1>
+        <p class="ticker">$PUMPCAT</p>
+        <p class="tagline">Pumpfun's cat mascot, White on top, green below—just a cat pumping for fun.</p>
+        <div class="ca-bar">
+          <span class="ca-label">Contract</span>
+          <code id="ca-display">Posting at launch</code>
+          <button type="button" id="copy-ca">Copy</button>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-green" data-link="buy" href="https://swap.pump.fun" target="_blank" rel="noopener noreferrer">
+            <img src="icons/pumpswap.svg" alt="" />
+            Buy on PumpSwap
+          </a>
+          <a class="btn btn-cream" data-link="chart" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+            <img src="icons/dexscreener.svg" alt="" />
+            Open Chart
+          </a>
+          <a class="btn btn-ghost" data-link="x" href="https://x.com/PumpfunCatMeme" target="_blank" rel="noopener noreferrer">
+            <img src="icons/x.svg" alt="" />
+            Follow
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow">The mascot</p>
+        <h2>A cream coat. A mint engine.</h2>
+        <p class="lede">Pumpfun Cat is the house cat of the launchpad — white from the ears down to the brim, green from the jersey to the next candle. No lore committee. No prophecy. Just a cat that showed up wearing the pill and started pumping for fun.</p>
+      </div>
+      <div class="trait-grid">
+        <article class="trait reveal">
+          <div class="trait-mark cream-mark"></div>
+          <h3>White on top</h3>
+          <p>Soft cream fur, pale cap, and a calm stare that never flinches when the tape turns loud. The top half stays clean. That is the point.</p>
+        </article>
+        <article class="trait reveal">
+          <div class="trait-mark mint-mark"></div>
+          <h3>Green below</h3>
+          <p>The body is mint velvet. The brim is mint. The capsule on the hat is mint. If it is under the horizon line, it is already pumping.</p>
+        </article>
+        <article class="trait reveal">
+          <div class="trait-mark pill-mark"></div>
+          <h3>Pumping for fun</h3>
+          <p>Not a utility deck. Not a roadmap recital. $PUMPCAT is the mascot coin — a Solana meme that exists because the cat looks like it is already winning.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="howtobuy" id="howtobuy">
+      <div class="section-head reveal">
+        <p class="eyebrow">How to buy</p>
+        <h2>Four capsules to $PUMPCAT</h2>
+        <p class="lede">Keep it simple. Wallet, SOL, PumpSwap, then the chart. The cat does not need a twelve-step ritual.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="step-num">01</span>
+          <span class="step-icon">
+            <img src="icons/phantom.svg" alt="Phantom" />
+          </span>
+          <h3>Open a Solana wallet</h3>
+          <p>Install Phantom and create a fresh wallet. Guard the seed. This is your only key into the mint field.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">02</span>
+          <span class="step-icon">
+            <img src="icons/solana.svg" alt="Solana" />
+          </span>
+          <h3>Load SOL</h3>
+          <p>Send SOL to that wallet. Leave a little extra for network fees so the swap does not stall at the last click.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">03</span>
+          <span class="step-icon">
+            <img src="icons/pumpswap.svg" alt="PumpSwap" />
+          </span>
+          <h3>Swap on PumpSwap</h3>
+          <p>Open PumpSwap, paste the $PUMPCAT contract, and swap SOL for the cat. Confirm in the wallet when the quote looks right.</p>
+        </li>
+        <li class="step reveal">
+          <span class="step-num">04</span>
+          <span class="step-icon">
+            <img src="icons/dexscreener.svg" alt="DexScreener" />
+          </span>
+          <h3>Watch the chart</h3>
+          <p>Track the live Solana pair on DexScreener. Same candles. Same tape. No extra wrappers.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="chart" id="chart">
+      <div class="section-head reveal">
+        <p class="eyebrow">Live tape</p>
+        <h2>DexScreener on Solana</h2>
+        <p class="lede">The only chart on this page is the official DexScreener embed. When the pair is live, the candles sit right here.</p>
+      </div>
+      <div class="chart-shell reveal">
+        <div class="chart-chrome">
+          <span></span><span></span><span></span>
+          <p>dexscreener.com/solana</p>
+        </div>
+        <div class="chart-frame">
+          <iframe
+            id="dex-frame"
+            title="DexScreener Solana chart for Pumpfun Cat"
+            src="https://dexscreener.com/solana?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=light&theme=light&chartStyle=0&chartType=usd&interval=15"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="joinus" id="joinus">
+      <div class="section-head reveal">
+        <p class="eyebrow">Join us</p>
+        <h2>Step into the mint field</h2>
+        <p class="lede">The banner is the meeting ground. Follow the cat, swap the coin, or keep the chart open. White on top. Green below.</p>
+      </div>
+      <div class="banner-wrap reveal">
+        <img class="banner" src="assets/banner.png" alt="Pumpfun Cat banner" />
+        <div class="banner-veil"></div>
+        <div class="banner-actions">
+          <a class="btn btn-green" data-link="x" href="https://x.com/PumpfunCatMeme" target="_blank" rel="noopener noreferrer">
+            <img src="icons/x.svg" alt="" />
+            Follow @PumpfunCatMeme
+          </a>
+          <a class="btn btn-cream" data-link="buy" href="https://swap.pump.fun" target="_blank" rel="noopener noreferrer">
+            <img src="icons/pumpswap.svg" alt="" />
+            Buy $PUMPCAT
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <a class="brand" href="#hero">
+      <span class="brand-orb">
+        <img src="assets/logo.png" alt="" />
+      </span>
+      <span class="brand-copy">
+        <span class="brand-name">Pumpfun Cat</span>
+        <span class="brand-tick">$PUMPCAT</span>
+      </span>
+    </a>
+    <p>Just a cat pumping for fun on Solana.</p>
+    <div class="foot-links">
+      <a data-link="x" href="https://x.com/PumpfunCatMeme" target="_blank" rel="noopener noreferrer">
+        <img src="icons/x.svg" alt="" /> X
+      </a>
+      <a data-link="buy" href="https://swap.pump.fun" target="_blank" rel="noopener noreferrer">
+        <img src="icons/pumpswap.svg" alt="" /> PumpSwap
+      </a>
+      <a data-link="chart" href="https://dexscreener.com/solana" target="_blank" rel="noopener noreferrer">
+        <img src="icons/dexscreener.svg" alt="" /> DexScreener
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
